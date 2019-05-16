@@ -1,0 +1,13 @@
+sources:
+{
+	gasSensorToDatahub.c
+}
+requires:
+{
+	api:
+	{
+		$LEGATO_ROOT/apps/sample/dataHub/io.api
+		ma_gasSensor = $CURDIR/../../GasSensorService/ma_gasSensor.api
+	}
+}
+

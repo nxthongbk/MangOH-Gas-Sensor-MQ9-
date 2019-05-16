@@ -1,0 +1,18 @@
+executables:
+{
+	gasSensorDisplay = ( gasSensorDisplayComponent )
+}
+
+processes:
+{
+	run:
+	{
+		( gasSensorDisplay )
+	}
+}
+
+bindings:
+{
+	gasSensorDisplay.gasSensorDisplayComponent.io -> dataHub.io
+	gasSensorDisplay.gasSensorDisplayComponent.admin -> dataHub.admin
+}

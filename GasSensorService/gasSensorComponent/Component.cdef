@@ -1,0 +1,20 @@
+sources:
+{
+	gasSensor.c
+}
+
+requires:
+{
+	api:
+	{
+		modemServices/le_adc.api
+	}
+}
+
+provides:
+{
+	api:
+	{
+		ma_gasSensor.api
+	}
+}

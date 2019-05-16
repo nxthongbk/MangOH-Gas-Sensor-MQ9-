@@ -1,0 +1,18 @@
+# ninja log v5
+0	145	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/component/1ccfe18770aa674624c321b4d2b542ef/obj/_componentMain.c.o	6bf77eb41da74794
+0	153	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/app/gasSensorDisplay/obj/gasSensorDisplay/_main.c.o	4fe1a0330ce4909f
+0	528	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/api/c3f83c33e2ea8380550c270289f460f8/client/io_interface.h	e83c5564fdf1fd16
+0	657	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/api/c3f83c33e2ea8380550c270289f460f8/client/io_client.c	2f7f8023d910b25e
+0	657	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/api/c3f83c33e2ea8380550c270289f460f8/client/io_messages.h	2f7f8023d910b25e
+0	909	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/api/519cca33158c88fc0d1f55572c53662e/client/admin_client.c	f63b3cc6278d581e
+0	909	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/api/519cca33158c88fc0d1f55572c53662e/client/admin_interface.h	f63b3cc6278d581e
+0	909	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/api/519cca33158c88fc0d1f55572c53662e/client/admin_messages.h	f63b3cc6278d581e
+657	1020	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/api/c3f83c33e2ea8380550c270289f460f8/client/io_client.c.o	ec2dd6b410a448b4
+909	1436	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/api/519cca33158c88fc0d1f55572c53662e/client/admin_client.c.o	a43a794f0490b40
+0	81	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/component/1ccfe18770aa674624c321b4d2b542ef/obj/d27a14f32645c6bce98c2ad6ebead225.o	2574936c448a0a07
+81	114	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/staging/read-only/lib/libComponent_gasSensorDisplayComponent.so	65c078b710f80904
+114	117	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/app/gasSensorDisplay/staging/read-only/lib/libComponent_gasSensorDisplayComponent.so	84960e69b1f82ab8
+115	148	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/app/gasSensorDisplay/obj/gasSensorDisplay/gasSensorDisplay	89fbec428feb5b84
+148	150	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/app/gasSensorDisplay/staging/read-only/bin/gasSensorDisplay	bd058d3eef3ed7ed
+150	161	0	/home/nxthong/MangOH/mangOH/apps/GasSensorDisplay/_build_gasSensorDisplay/wp85/app/gasSensorDisplay/staging/info.properties	e804299e63fb9acc
+161	196	0	gasSensorDisplay.wp85.update	60acb1c4b2e0c153

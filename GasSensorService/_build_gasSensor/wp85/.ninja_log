@@ -1,0 +1,24 @@
+# ninja log v5
+1	110	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/component/e0a66efb59875f924c9bc90a95791f95/obj/_componentMain.c.o	22a2620c16cb7e11
+1	121	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/app/gasSensor/obj/gasSensor/_main.c.o	34977651eee2585b
+1	527	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/api/77a8df6e6afaa95bfef32592c527dc2a/client/le_adc_client.c	4f98e33991780515
+1	527	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/api/77a8df6e6afaa95bfef32592c527dc2a/client/le_adc_interface.h	4f98e33991780515
+1	527	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/api/77a8df6e6afaa95bfef32592c527dc2a/client/le_adc_messages.h	4f98e33991780515
+0	3	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/build.ninja	600a0f4ce1e9cd01
+1	138	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/app/gasSensor/obj/gasSensor/_main.c.o	34977651eee2585b
+1	144	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/component/e0a66efb59875f924c9bc90a95791f95/obj/_componentMain.c.o	22a2620c16cb7e11
+0	172	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/api/77a8df6e6afaa95bfef32592c527dc2a/client/le_adc_client.c.o	302b01f2c5278cc1
+0	3	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/build.ninja	600a0f4ce1e9cd01
+1	119	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/app/gasSensor/obj/gasSensor/_main.c.o	34977651eee2585b
+0	119	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/component/e0a66efb59875f924c9bc90a95791f95/obj/_componentMain.c.o	22a2620c16cb7e11
+1	381	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/api/ec1786222c80c3154f9cba50fa0e17dd/server/ma_gasSensor_server.c	4a7d4aa0cdbbb596
+1	381	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/api/ec1786222c80c3154f9cba50fa0e17dd/server/ma_gasSensor_server.h	4a7d4aa0cdbbb596
+1	381	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/api/ec1786222c80c3154f9cba50fa0e17dd/server/ma_gasSensor_messages.h	4a7d4aa0cdbbb596
+381	484	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/component/e0a66efb59875f924c9bc90a95791f95/obj/a518ceccd4c4cff9bb03edd99564aadf.o	b90d89df13e963ce
+381	492	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/api/ec1786222c80c3154f9cba50fa0e17dd/server/ma_gasSensor_server.o	d131bb0e1c5481fe
+492	526	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/staging/read-only/lib/libComponent_gasSensorComponent.so	6bbcab7e5e4a4938
+527	529	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/app/gasSensor/staging/read-only/lib/libComponent_gasSensorComponent.so	fe6131d964cde47
+527	559	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/app/gasSensor/obj/gasSensor/gasSensor	782d58f89ade12c3
+559	563	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/app/gasSensor/staging/read-only/bin/gasSensor	2a592f22f422d4fa
+563	572	0	/home/nxthong/MangOH/mangOH/apps/GasSensorService/_build_gasSensor/wp85/app/gasSensor/staging/info.properties	b0876cae9285e6bc
+572	590	0	gasSensor.wp85.update	3e02587d3d997972

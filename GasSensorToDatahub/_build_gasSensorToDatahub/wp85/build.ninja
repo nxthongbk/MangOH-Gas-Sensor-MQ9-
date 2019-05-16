@@ -1,0 +1,175 @@
+# Build script for application 'gasSensorToDatahub'
+
+# == Auto-generated file.  Do not edit. ==
+
+builddir =/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85
+
+cFlags = -I /home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85 -I/home/nxthong/MangOH/workspace/legato/interfaces -I/home/nxthong/MangOH/workspace/legato/framework/include -I/home/nxthong/MangOH/workspace/legato/build/wp85/framework/include -I/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub
+
+cxxFlags = -I /home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85 -I/home/nxthong/MangOH/workspace/legato/interfaces -I/home/nxthong/MangOH/workspace/legato/framework/include -I/home/nxthong/MangOH/workspace/legato/build/wp85/framework/include -I/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub
+
+ldFlags =
+
+target = wp85
+
+ifgenFlags =  --import-dir /home/nxthong/MangOH/workspace/legato/interfaces --import-dir /home/nxthong/MangOH/workspace/legato/framework/include --import-dir /home/nxthong/MangOH/workspace/legato/build/wp85/framework/include --import-dir /home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub
+
+rule CompileC
+  description = Compiling C source
+  depfile = $out.d
+  command =  /opt/swi/SWI9X15Y_07.13.05.00/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc --sysroot=/opt/swi/SWI9X15Y_07.13.05.00/sysroots/armv7a-neon-poky-linux-gnueabi -MMD -MF $out.d -c $in -o $out -DLE_FILENAME=`basename $in` -Wall -fPIC -Werror -fvisibility=hidden -DMK_TOOLS_BUILD  -DLEGATO_EMBEDDED $cFlags
+
+rule CompileCxx
+  description = Compiling C++ source
+  depfile = $out.d
+  command =  /opt/swi/SWI9X15Y_07.13.05.00/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ --sysroot=/opt/swi/SWI9X15Y_07.13.05.00/sysroots/armv7a-neon-poky-linux-gnueabi -MMD -MF $out.d -c $in -o $out -DLE_FILENAME=`basename $in` -Wall -fPIC -Werror -fvisibility=hidden  -DMK_TOOLS_BUILD  -DLEGATO_EMBEDDED $cxxFlags
+
+rule LinkCLib
+  description = Linking C library
+  command =  /opt/swi/SWI9X15Y_07.13.05.00/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc --sysroot=/opt/swi/SWI9X15Y_07.13.05.00/sysroots/armv7a-neon-poky-linux-gnueabi -shared -o $out $in $ldFlags
+
+rule LinkCxxLib
+  description = Linking C++ library
+  command =  /opt/swi/SWI9X15Y_07.13.05.00/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ --sysroot=/opt/swi/SWI9X15Y_07.13.05.00/sysroots/armv7a-neon-poky-linux-gnueabi -shared -o $out $in $ldFlags
+
+rule LinkCExe
+  description = Linking C executable
+  command =  /opt/swi/SWI9X15Y_07.13.05.00/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc --sysroot=/opt/swi/SWI9X15Y_07.13.05.00/sysroots/armv7a-neon-poky-linux-gnueabi -fPIE -pie -o $out $in $ldFlags
+
+rule LinkCxxExe
+  description = Linking C++ executable
+  command =  /opt/swi/SWI9X15Y_07.13.05.00/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ --sysroot=/opt/swi/SWI9X15Y_07.13.05.00/sysroots/armv7a-neon-poky-linux-gnueabi -fPIE -pie -o $out $in $ldFlags
+
+rule CompileJava
+  description = Compiling Java source
+  command = javac -cp $classPath -d `dirname $out` $in && touch $out
+
+rule MakeJar
+  description = Making JAR file
+  command = INDIR=`dirname $in`; find $$INDIR -name '*.class' -printf "-C $$INDIR\n%P\n"|xargs jar -cf $out
+
+rule MakeKernelModule
+  description = Build kernel driver module
+  depfile = $out.d
+  command = make -C $in
+
+rule BuildExternal
+  description = Running external build step
+  command = cd $builddir/$workingdir && $
+            export CFLAGS="--sysroot=/opt/swi/SWI9X15Y_07.13.05.00/sysroots/armv7a-neon-poky-linux-gnueabi $cFlags" $
+            CXXFLAGS="--sysroot=/opt/swi/SWI9X15Y_07.13.05.00/sysroots/armv7a-neon-poky-linux-gnueabi $cxxFlags" $
+            LDFLAGS="--sysroot=/opt/swi/SWI9X15Y_07.13.05.00/sysroots/armv7a-neon-poky-linux-gnueabi $ldFlags" $
+            CPPFLAGS="--sysroot=/opt/swi/SWI9X15Y_07.13.05.00/sysroots/armv7a-neon-poky-linux-gnueabi $cppFlags" $
+            PATH="$${LEGATO_ROOT}/bin:/opt/swi/SWI9X15Y_07.13.05.00/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi:/opt/swi/SWI9X15Y_07.13.05.00/sysroots/x86_64-pokysdk-linux/usr/bin:/opt/swi/SWI9X15Y_07.13.05.00/sysroots/x86_64-pokysdk-linux/bin:/opt/swi/SWI9X15Y_07.13.05.00/sysroots/x86_64-pokysdk-linux/sbin:$$PATH" $
+            && $
+            $externalCommand
+
+rule GenInterfaceCode
+  description = Generating IPC interface code
+  command = ifgen --output-dir $outputDir $ifgenFlags $in
+
+rule GenPyApiCExtension
+  description = Generating Python API C Extension
+  command = cextgenerator.py $in -o $workDir > /dev/null
+rule CopyFile
+  description = Copying file
+  command = cp -d -f -T $in $out
+
+rule RegenNinjaScript
+  description = Regenerating build script
+  generator = 1
+  command = mkapp --dont-run-ninja "-t" "wp85" "gasSensorToDatahub.adef"
+
+rule BundleFile
+  description = Bundling file
+  command = legato-install -m $modeFlags $in $out
+
+rule MakeAppInfoProperties
+  description = Creating info.properties
+  command = rm -f $out && $
+            md5=$$( ( cd $workingDir/staging && $
+                      find -P -print0 |LC_ALL=C sort -z && $
+                      find -P -type f -print0 |LC_ALL=C sort -z |xargs -0 md5sum && $
+                      find -P -type l -print0 |LC_ALL=C sort -z |xargs -0 -r -n 1 readlink $
+                    ) | md5sum) && $
+            md5=$${md5%% *} && $
+            ( echo "app.name=$name" && $
+              echo "app.md5=$$md5" && $
+              echo "app.version=$version" && $
+              echo "legato.version=`cat $$LEGATO_ROOT/version`" $
+            ) > $out
+
+rule PackApp
+  description = Packaging app
+  command = $
+            mtime=`stat -c %Y $adefPath` && $
+            find $workingDir/staging -exec touch --no-dereference --date=@$$mtime {} \; && $
+            (cd $workingDir/staging && find . -print0 | LC_ALL=C sort -z |tar --no-recursion --null -T - -cjf - ) > $workingDir/$name.$target && $
+            tarballSize=`stat -c '%s' $workingDir/$name.$target` && $
+            md5=`grep '^app.md5=' $in | sed 's/^app.md5=//'` && $
+            ( printf '{\n' && $
+              printf '"command":"updateApp",\n' && $
+              printf '"name":"$name",\n' && $
+              printf '"version":"$version",\n' && $
+              printf '"md5":"%s",\n' "$$md5" && $
+              printf '"size":%s\n' "$$tarballSize" && $
+              printf '}' && $
+              cat $workingDir/$name.$target $
+            ) > $out
+
+rule BinPackApp
+  description = Packaging app for distribution.
+  command = cp -r $stagingDir/* $workingDir/ && $
+            rm $workingDir/info.properties $workingDir/root.cfg && $
+            mtime=`stat -c %Y $adefPath` && $
+            find $workingDir -exec touch  --no-dereference --date=@$$mtime {} \; && $
+            (cd $workingDir/ && find . -print0 |LC_ALL=C sort -z  |tar --no-recursion --null -T - -cjf - ) > $out
+
+build $builddir/api/c3f83c33e2ea8380550c270289f460f8/client/io_client.c.o: CompileC $builddir/api/c3f83c33e2ea8380550c270289f460f8/client/io_client.c | $builddir/api/c3f83c33e2ea8380550c270289f460f8/client/io_messages.h $builddir/api/c3f83c33e2ea8380550c270289f460f8/client/io_interface.h
+  cFlags = $cFlags
+
+build $builddir/api/c3f83c33e2ea8380550c270289f460f8/client/io_client.c $builddir/api/c3f83c33e2ea8380550c270289f460f8/client/io_interface.h $builddir/api/c3f83c33e2ea8380550c270289f460f8/client/io_messages.h: GenInterfaceCode /home/nxthong/MangOH/workspace/legato/apps/sample/dataHub/io.api |
+  ifgenFlags = --gen-client --gen-interface --gen-local --name-prefix io $ifgenFlags
+  outputDir = $builddir/api/c3f83c33e2ea8380550c270289f460f8/client
+
+build $builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_client.c.o: CompileC $builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_client.c | $builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_messages.h $builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_interface.h
+  cFlags = $cFlags
+
+build $builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_client.c $builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_interface.h $builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_messages.h: GenInterfaceCode /home/nxthong/MangOH/mangOH/apps/GasSensorService/ma_gasSensor.api |
+  ifgenFlags = --gen-client --gen-interface --gen-local --name-prefix ma_gasSensor $ifgenFlags
+  outputDir = $builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client
+
+build /home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/staging/read-only/lib/libComponent_gasSensorToDatahubComponent.so: LinkCLib $builddir/component/4b7c40503fa35326002e7259df36fadd/obj/eed0f69246eaf4df618775c69980c2f5.o $builddir/api/c3f83c33e2ea8380550c270289f460f8/client/io_client.c.o $builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_client.c.o $builddir/component/4b7c40503fa35326002e7259df36fadd/obj/_componentMain.c.o | /home/nxthong/MangOH/workspace/legato/build/wp85/framework/lib/liblegato.so
+  ldFlags =  -L/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/staging/read-only/lib -Wl,--enable-new-dtags,-rpath="\$$ORIGIN/../lib" "-L$$LEGATO_BUILD/framework/lib" -llegato -lpthread -lrt -lm
+
+build $builddir/component/4b7c40503fa35326002e7259df36fadd/obj/eed0f69246eaf4df618775c69980c2f5.o: CompileC /home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/gasSensorToDatahubComponent/gasSensorToDatahub.c || $builddir/api/c3f83c33e2ea8380550c270289f460f8/client/io_interface.h $builddir/api/c3f83c33e2ea8380550c270289f460f8/client/io_messages.h $builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_interface.h $builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_messages.h 
+  cFlags = $cFlags -I$builddir/component/4b7c40503fa35326002e7259df36fadd/src -I$builddir/api/c3f83c33e2ea8380550c270289f460f8/client -I$builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client -DLE_COMPONENT_NAME=gasSensorToDatahubComponent -DLE_LOG_SESSION=gasSensorToDatahubComponent_LogSession  -DLE_LOG_LEVEL_FILTER_PTR=gasSensorToDatahubComponent_LogLevelFilterPtr  "-DCOMPONENT_INIT=LE_CI_LINKAGE LE_SHARED void _gasSensorToDatahubComponent_COMPONENT_INIT()"
+
+build $builddir/component/4b7c40503fa35326002e7259df36fadd/obj/_componentMain.c.o: CompileC $builddir/component/4b7c40503fa35326002e7259df36fadd/src/_componentMain.c
+  cFlags = $cFlags -I$builddir/component/4b7c40503fa35326002e7259df36fadd/src -I$builddir/api/c3f83c33e2ea8380550c270289f460f8/client -I$builddir/api/ec1786222c80c3154f9cba50fa0e17dd/client -DLE_COMPONENT_NAME=gasSensorToDatahubComponent -DLE_LOG_SESSION=gasSensorToDatahubComponent_LogSession  -DLE_LOG_LEVEL_FILTER_PTR=gasSensorToDatahubComponent_LogLevelFilterPtr  "-DCOMPONENT_INIT=LE_CI_LINKAGE LE_SHARED void _gasSensorToDatahubComponent_COMPONENT_INIT()"
+
+build $builddir/app/gasSensorToDatahub/obj/gasSensorToDatahub/_main.c.o: CompileC /home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/app/gasSensorToDatahub/src/gasSensorToDatahub/_main.c
+  cFlags = $cFlags -DLE_COMPONENT_NAME=gasSensorToDatahub_exe -DLE_LOG_SESSION=gasSensorToDatahub_exe_LogSession -DLE_LOG_LEVEL_FILTER_PTR=gasSensorToDatahub_exe_LogLevelFilterPtr 
+
+build $builddir/app/gasSensorToDatahub/obj/gasSensorToDatahub/gasSensorToDatahub: LinkCExe $builddir/app/gasSensorToDatahub/obj/gasSensorToDatahub/_main.c.o | /home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/staging/read-only/lib/libComponent_gasSensorToDatahubComponent.so /home/nxthong/MangOH/workspace/legato/build/wp85/framework/lib/liblegato.so /home/nxthong/MangOH/workspace/legato/build/$target/framework/lib/liblegato.so
+  ldFlags = -rdynamic -Wl,--enable-new-dtags,-rpath="\$$ORIGIN/../lib" -L/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/staging/read-only/lib "-L/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/staging/read-only/lib" -lComponent_gasSensorToDatahubComponent "-L$$LEGATO_BUILD/framework/lib" -llegato -lpthread -lrt -ldl -lm $ldFlags
+
+build $builddir/app/gasSensorToDatahub/staging/read-only/lib/libComponent_gasSensorToDatahubComponent.so : BundleFile /home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/staging/read-only/lib/libComponent_gasSensorToDatahubComponent.so
+  modeFlags = u+rw+x,g+r+x,o+x+r-w
+
+build $builddir/app/gasSensorToDatahub/staging/read-only/bin/gasSensorToDatahub : BundleFile $builddir/app/gasSensorToDatahub/obj/gasSensorToDatahub/gasSensorToDatahub
+  modeFlags = u+rw+x,g+r+x,o+x+r-w
+
+build $builddir/app/gasSensorToDatahub/staging/info.properties : MakeAppInfoProperties | $builddir/app/gasSensorToDatahub/staging/read-only/lib/libComponent_gasSensorToDatahubComponent.so $builddir/app/gasSensorToDatahub/staging/read-only/bin/gasSensorToDatahub $builddir/app/gasSensorToDatahub/staging/root.cfg
+  name = gasSensorToDatahub
+  version = 
+  workingDir = $builddir/app/gasSensorToDatahub
+
+build gasSensorToDatahub.$target.update: PackApp $builddir/app/gasSensorToDatahub/staging/info.properties
+  name = gasSensorToDatahub
+  adefPath = /home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/gasSensorToDatahub.adef
+  version = 
+  workingDir = $builddir/app/gasSensorToDatahub
+
+build /home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/build.ninja: RegenNinjaScript | /home/nxthong/MangOH/mangOH/apps/GasSensorService/ma_gasSensor.api /home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/gasSensorToDatahubComponent/Component.cdef /home/nxthong/MangOH/workspace/legato/apps/sample/dataHub/io.api
+

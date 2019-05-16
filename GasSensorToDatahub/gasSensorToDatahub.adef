@@ -1,0 +1,18 @@
+executables:
+{
+	gasSensorToDatahub = ( gasSensorToDatahubComponent )
+}
+
+processes:
+{
+	run:
+	{
+		( gasSensorToDatahub )
+	}
+}
+
+bindings:
+{
+	gasSensorToDatahub.gasSensorToDatahubComponent.io -> dataHub.io
+	gasSensorToDatahub.gasSensorToDatahubComponent.ma_gasSensor -> gasSensor.ma_gasSensor
+}

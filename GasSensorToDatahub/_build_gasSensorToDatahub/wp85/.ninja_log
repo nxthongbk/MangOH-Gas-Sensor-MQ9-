@@ -1,0 +1,18 @@
+# ninja log v5
+0	125	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/app/gasSensorToDatahub/obj/gasSensorToDatahub/_main.c.o	120ea9d979d52cb5
+0	149	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/component/4b7c40503fa35326002e7259df36fadd/obj/_componentMain.c.o	80cbd2711aeb01c
+0	410	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_client.c	3197ee7e807a24b0
+0	410	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_interface.h	3197ee7e807a24b0
+0	410	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_messages.h	3197ee7e807a24b0
+410	534	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/api/ec1786222c80c3154f9cba50fa0e17dd/client/ma_gasSensor_client.c.o	e8de006994cdd668
+0	612	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/api/c3f83c33e2ea8380550c270289f460f8/client/io_client.c	345acf1d2de6c859
+0	612	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/api/c3f83c33e2ea8380550c270289f460f8/client/io_interface.h	345acf1d2de6c859
+0	612	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/api/c3f83c33e2ea8380550c270289f460f8/client/io_messages.h	345acf1d2de6c859
+612	920	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/api/c3f83c33e2ea8380550c270289f460f8/client/io_client.c.o	82727bad94381348
+1	88	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/component/4b7c40503fa35326002e7259df36fadd/obj/eed0f69246eaf4df618775c69980c2f5.o	b10ab74a5ce60731
+88	119	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/staging/read-only/lib/libComponent_gasSensorToDatahubComponent.so	2557ac5f01bda0d4
+119	121	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/app/gasSensorToDatahub/staging/read-only/lib/libComponent_gasSensorToDatahubComponent.so	dcdf32b9091d88fa
+119	155	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/app/gasSensorToDatahub/obj/gasSensorToDatahub/gasSensorToDatahub	c8d0a52fadbc4bdd
+155	157	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/app/gasSensorToDatahub/staging/read-only/bin/gasSensorToDatahub	87f221540f284d47
+157	162	0	/home/nxthong/MangOH/mangOH/apps/GasSensorToDatahub/_build_gasSensorToDatahub/wp85/app/gasSensorToDatahub/staging/info.properties	9eca8e7d35b8a0dc
+162	184	0	gasSensorToDatahub.wp85.update	7f176e9672190c42

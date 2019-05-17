@@ -1,4 +1,4 @@
-# Integrate Grove Alcohol Sensor with MangoH and Grove IoT Exapansion Card
+# Integrate Grove Gas Sensor with MangoH and Grove IoT Exapansion Card
 
 This project demonstrates how to integrate Grove Gas Sensor with MangoH and Grove IoT Exapansion Card.
 
@@ -7,11 +7,11 @@ This project demonstrates how to integrate Grove Gas Sensor with MangoH and Grov
 
 * A mangOH Red board.
 * A Grove IoT Expansion card.
-* Gas Alcohol sensor: See detail of sensor on wiki page: http://wiki.seeedstudio.com/Grove-Alcohol_Sensor/ 
+* Gas Gas sensor: See detail of sensor on wiki page: http://wiki.seeedstudio.com/Grove-Alcohol_Sensor/ 
 
-Grove Alcohol Sensor
+Grove Gas Sensor
 ------------------
-Grove - Alcohol Sensor is an Analog output sensor. The output voltage from the Gas sensor increases when the concentration of gas increases. Sensitivity can be adjusted by varying the potentiomete.
+Grove - Gas Sensor is an Analog output sensor. The output voltage from the Gas sensor increases when the concentration of gas increases. Sensitivity can be adjusted by varying the potentiomete.
 
 
 Legato Application

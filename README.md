@@ -2,12 +2,15 @@
 
 This project demonstrates how to integrate Grove Gas Sensor with MangoH and Grove IoT Exapansion Card.
 
-
 ## Prerequisites
 
 * A mangOH Red board.
 * A Grove IoT Expansion card.
 * Gas Gas sensor: See detail of sensor on wiki page: http://wiki.seeedstudio.com/Grove-Alcohol_Sensor/ 
+
+
+<img src="https://user-images.githubusercontent.com/17214533/57900863-c8bb8d80-788c-11e9-85cd-585dc6027c3d.png" width="350" alt="accessibility text"> 
+
 
 Grove Gas Sensor
 ------------------
